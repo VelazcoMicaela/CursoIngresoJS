@@ -16,24 +16,44 @@ function Rectangulo ()
 	num01= parseInt(num01);
 	num02= parseInt(num02);
 
-	resultado= (num01 * num02) *3;
+	resultado= ((num01 + num02)*2) *3;
 
 	alert (resultado);
 }
 function Circulo () 
 {
-	var num03;
+	var radio;
+	var perimetro;
 	var resultado;
 
-	num03= txtIdRadio.value;
+	radio= txtIdRadio.value;
 
-	num03= parseInt(num03);
+	radio= parseFloat(radio);
 
-	resultado= (num03 * num03) *3;
+	perimetro= Math.PI * radio * 2;
+	perimetro= Math.ceil(perimetro);
+	resultado= perimetro *3;
 
 	alert (resultado);
 }
 function Materiales () 
 {
-	
+	var largo;
+	var ancho;
+	var cal;
+	var cemento;
+	var superficie;
+
+	largo= txtIdLargo.value;
+	ancho= txtIdAncho.value;
+
+	largo= parseInt(largo);
+	ancho= parseInt(ancho);
+
+	superficie= largo * ancho;
+	cal= superficie * 3;
+	cemento= superficie * 2;
+
+	alert("Vas a necesitar para " + superficie + "m cuadrados= " + cal + " bolsas de cal y " + cemento + " bolsas de cemento");
+
 }

@@ -46,7 +46,7 @@ function PrecioFinal ()
 	var num01;
 	var num02;
 	var num03;
-	var promedio;
+	var suma;
 	var resultado;
 
 	num01= txtIdPrecioUno.value;
@@ -57,8 +57,8 @@ function PrecioFinal ()
 	num02= parseInt(num02);
 	num03= parseInt(num03);
 
-	promedio= num01 + num02 + num03;
-	resultado= (promedio *21) / 100;
+	suma= num01 + num02 + num03;
+	resultado= suma *1.21;
 
 	alert (resultado);
 }
