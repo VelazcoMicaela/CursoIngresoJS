@@ -7,4 +7,3 @@ function mostrar()
 	if (edad <=17 && edad >13) {
 		alert("Adolescente");
 	}
-}
